@@ -1,0 +1,68 @@
+:root {
+    /*--main: #FFAABB;*/
+    --main: #2e89dec1;
+    --accent1: #99DDFF;
+    --accent2: #EEDD88;
+    --textcolor: black;
+    font-family: "IBM Plex Sans JP";
+    font-size: small;
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+}
+
+h2 {
+    border-bottom: 1px solid var(--main);
+    font-size: medium;
+}
+
+h2:before,
+h3:before,
+h4:before {
+    color: var(--main);
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h2:before {
+    content: "## ";
+}
+
+h3:before {
+    content: "### ";
+}
+
+/*
+h4:before {
+    content: "### ";
+}
+*/
+
+a:after {
+    content: " ↗";
+    color: var(--accent1);
+}
+
+a {
+    color: var(--textcolor);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--accent1);
+}
+
+table, th, td {
+    border: 1px solid lightgray;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
