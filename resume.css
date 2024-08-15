@@ -1,6 +1,6 @@
 :root {
     /*--main: #FFAABB;*/
-    --main: #2e89dec1;
+    --main: gray;
     --accent1: #99DDFF;
     --accent2: #EEDD88;
     --textcolor: black;
@@ -33,11 +33,11 @@ p {
 }
 
 h2:before {
-    content: "## ";
+    content: "# ";
 }
 
 h3:before {
-    content: "### ";
+    content: "## ";
 }
 
 /*
@@ -48,14 +48,14 @@ h4:before {
 
 a:after {
     content: " ↗";
-    color: var(--accent1);
+    color: var(--main);
 }
 
 a {
     color: var(--textcolor);
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: var(--accent1);
+    text-decoration-color: var(--main);
 }
 
 table, th, td {
